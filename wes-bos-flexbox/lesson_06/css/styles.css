@@ -43,10 +43,28 @@
   background: #b24;
 }
 
-.container {
+.container1 {
   display: flex;
+  border: 1px solid blue;
+  align-items: center;
+  height: 300px;
+}
+
+.container2 {
+  display: flex;
+  align-items: center;
+  height: 300px;
+  flex-direction: column;
+}
+
+.container3 {
+  display: flex;
+  align-items: center;
+  height: 300px;
+  flex-direction: column;
 }
 
 .box {
   width: 300px;
+  
 }
