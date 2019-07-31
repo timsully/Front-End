@@ -1,0 +1,52 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.box {
+  color: white;
+  font-size: 100px;
+  text-align: center;
+  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Box colors */
+.box1 {
+  background: #	#32CD32;
+}
+.box2 {
+  background: #00FF00;
+}
+.box3 {
+  background: #FFA07A;
+}
+.box4 {
+  background: #F78;
+}
+.box5 {
+  background: #d28;
+}
+.box6 {
+  background: #c09;
+}
+.box7 {
+  background: #a45;
+}
+.box8 {
+  background: #a23;
+}
+.box9 {
+  background: #a11;
+}
+.box10 {
+  background: #b24;
+}
+
+.container {
+  display: flex;
+}
+
+.box {
+  width: 300px;
+}
