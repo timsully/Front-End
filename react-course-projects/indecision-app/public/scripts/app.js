@@ -2,6 +2,14 @@
 
 console.log("App.js is running");
 
+// Create app object title/subtitle
+// use title/subtitle in the template var
+// render template
+var app = {
+  title: "Indecision App",
+  subtitle: "Put your life in the hands of a computer"
+};
+
 // JSX - JavaScript XML (Extension of JS language)
 var template = React.createElement(
   "div",
@@ -9,35 +17,20 @@ var template = React.createElement(
   React.createElement(
     "h1",
     null,
-    "Tim Sullivan"
+    app.title
   ),
   React.createElement(
-    "p",
+    "h2",
     null,
-    "This is some info."
-  ),
-  React.createElement(
-    "ol",
-    null,
-    React.createElement(
-      "li",
-      null,
-      "Item one"
-    ),
-    React.createElement(
-      "li",
-      null,
-      "Item two"
-    )
+    app.subtitle
   )
 );
 
-// Create a templateTwo variable which is a JSX expression
-// div
-//  h1 -> Tim Sullivan
-//  p -> Age: 22
-//  p -> Location: San Francisco, CA
-// Render templateTwo instead of template
+var user = {
+  name: 'Andrew',
+  age: 26,
+  location: 'Philadelphia'
+};
 
 var templateTwo = React.createElement(
   "div",
@@ -45,20 +38,22 @@ var templateTwo = React.createElement(
   React.createElement(
     "h1",
     null,
-    "Tim Sullivan"
+    user.name + "!"
   ),
   React.createElement(
     "p",
     null,
-    "Age: 22"
+    "Age: ",
+    user.age
   ),
   React.createElement(
     "p",
     null,
-    "Location: San Francisco, CA"
+    "Location: ",
+    user.location
   )
 );
 
 var appRoot = document.getElementById("app");
 
-ReactDOM.render(templateTwo, appRoot);
+ReactDOM.render(template, appRoot);
